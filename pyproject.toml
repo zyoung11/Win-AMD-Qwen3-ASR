@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qwen-asr"
+version = "0.0.6"
+description = "Qwen-ASR python package"
+readme = "README.md"
+requires-python = "==3.12.0"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Alibaba Qwen Team" }]
+
+dependencies = [
+  "transformers==4.57.6",
+  "nagisa==0.2.11",
+  "soynlp==0.0.493",
+  "accelerate>=1.12.0",
+  "qwen-omni-utils",
+  "librosa",
+  "soundfile",
+  "sox",
+  "gradio",
+  "flask",
+  "pytz",
+  "torch",
+  "torchaudio",
+  "torchvision",
+  "huggingface-hub==0.34.0",
+  "typer>=0.21.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/Qwen/Qwen3-ASR"
+Repository = "https://github.com/Qwen/Qwen3-ASR"
+
+[project.scripts]
+qwen-asr-demo = "qwen_asr.cli.demo:main"
+qwen-asr-demo-streaming = "qwen_asr.cli.demo_streaming:main"
+qwen-asr-serve = "qwen_asr.cli.serve:main"
+
+[tool.setuptools]
+packages = { find = { where = ["."] , include = ["qwen_asr*"] } }
+include-package-data = true
+
+[tool.setuptools.package-data]
+qwen_tts = ["py.typed", "**/*.dict"]
+
+# AMD GPU 的 PyTorch 本地 wheel 配置
+[tool.uv.sources]
+torch = { path = "torch-2.8.0a0+gitfc14c65-cp312-cp312-win_amd64.whl" }
+torchaudio = { path = "torchaudio-2.6.0a0+1a8f621-cp312-cp312-win_amd64.whl" }
+torchvision = { path = "torchvision-0.24.0a0+c85f008-cp312-cp312-win_amd64.whl" }

@@ -19,7 +19,8 @@ winget install cURL.cURL
 ```bat
 curl -L -O https://github.com/zyoung11/Win-AMD-Qwen3-ASR/releases/download/0.1.0/torch-2.8.0a0+gitfc14c65-cp312-cp312-win_amd64.whl 
 curl -L -O https://github.com/zyoung11/Win-AMD-Qwen3-ASR/releases/download/0.1.0/torchaudio-2.6.0a0+1a8f621-cp312-cp312-win_amd64.whl 
-curl -L -O https://github.com/zyoung11/Win-AMD-Qwen3-ASR/releases/download/0.1.0/torchvision-0.24.0a0+c85f008-cp312-cp312-win_amd64.whl 
+curl -L -O https://github.com/zyoung11/Win-AMD-Qwen3-ASR/releases/download/0.1.0/torchvision-0.24.0a0+c85f008-cp312-cp312-win_amd64.whl
+curl -L -O https://github.com/zyoung11/Win-AMD-Qwen3-ASR/releases/download/0.1.0/qwen_asr-0.0.6-py3-none-any.whl
 ```
 <br>
 

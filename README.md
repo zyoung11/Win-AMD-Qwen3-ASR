@@ -25,7 +25,7 @@ winget install cURL.cURL
 ```
 <br>
 
-# 三、安装 whl
+# 三、下载 whl
 
 ```bat
 curl -L -O https://github.com/zyoung11/Win-AMD-Qwen3-ASR/releases/download/0.1.0/torch-2.8.0a0+gitfc14c65-cp312-cp312-win_amd64.whl 

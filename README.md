@@ -1,3 +1,14 @@
+# 我的配置
+
+- 系统：Windows11 24H2
+- 硬件：AMD RYZEN AI MA+ 395 w/ Radeon 8060S
+
+- 驱动：AMD Software: Adrenalin Edition 26.1.1 Release Notes
+
+![image](image.jpg)
+
+<br>
+
 # 一、创建文件夹
 
 ```bat

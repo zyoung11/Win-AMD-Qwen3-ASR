@@ -21,7 +21,8 @@ cd Qwen3-ASR
 
 ```bat
 winget install astral-sh.uv
-winget install cURL.cURL 
+winget install cURL.cURL
+winget install Gyan.FFmpeg
 ```
 <br>
 
@@ -38,7 +39,7 @@ curl -L -O https://github.com/zyoung11/Win-AMD-Qwen3-ASR/releases/download/0.1.0
 # 四、创建虚拟环境并安装
 
 ```bat
-uv venv --python 3.12.0
+uv venv --managed-python --relocatable --link-mode copy --python 3.12.0
 
 uv pip install ./torch-2.8.0a0+gitfc14c65-cp312-cp312-win_amd64.whl ./torchaudio-2.6.0a0+1a8f621-cp312-cp312-win_amd64.whl ./torchvision-0.24.0a0+c85f008-cp312-cp312-win_amd64.whl
 

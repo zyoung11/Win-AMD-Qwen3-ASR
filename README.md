@@ -17,7 +17,7 @@ cd Qwen3-ASR
 ```
 <br>
 
-#  二、安装 uv 和 curl（如果没有的话）
+#  二、安装 uv, curl 和 FFmpeg（如果没有的话）
 
 ```bat
 winget install astral-sh.uv
